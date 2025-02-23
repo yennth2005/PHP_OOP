@@ -1,0 +1,291 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+
+
+.container{
+    width: 1000px;
+    margin: auto;
+    box-sizing: border-box;
+} */
+.carousel-item img {
+    border-radius: 10px;
+    height: 650px;
+    object-fit: cover;
+}
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+}
+.img_thumbnail{
+    width: 100%;
+}
+/* Định dạng navbar */
+.navbar-custom {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 12px 0;
+}
+
+/* Navbar chính */
+.navbar-custom {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 10px 20px;
+}
+
+/* Logo */
+.logo {
+    height: 50px;
+}
+
+/* Link trong Navbar */
+.navbar-custom .nav-link {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.navbar-custom .nav-link:hover {
+    color: #ffcc00;
+    transform: scale(1.05);
+}
+
+/* Nút Đăng nhập */
+.navbar-custom .btn-primary {
+    background-color: #ff6600;
+    border: none;
+    transition: 0.3s;
+}
+.navbar-custom .btn-primary:hover {
+    background-color: #ff4500;
+}
+
+/* Giỏ hàng */
+.cart-icon {
+    font-size: 22px;
+    color: white;
+    position: relative;
+}
+.cart-icon:hover {
+    color: #ffcc00;
+}
+
+/* Ô tìm kiếm */
+.fo
+
+
+.cardd{
+    width: 230px;
+    height: 310px;
+    text-align: center;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    border: none;
+}
+.cardd:hover{
+    /* border: 6px solid rgb(203, 251, 255); */
+    background-color: rgb(232, 232, 232);
+}
+.cardd a{
+    text-decoration: none;
+    color:black;
+}
+.cardd a:hover{
+    color: orangered;
+    text-decoration: underline;
+}
+.card-thumb{
+    padding-top: 10px;
+    height: 210px;
+    /* transition: .6s; */
+}
+.cardd img:hover{
+    transform: rotateY(180deg);
+    transform: preserve-3d;
+    transition: transform 1s;
+}
+/* .card-thumb img:hover{
+    filter: blur(1px);
+} */
+.card-name{
+    font-weight:bold;
+    /* font-size: 21px;
+    height: 63px; */
+}
+.card-price{
+    color:red;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0px;
+}
+.bottom{
+    display: flex;
+    justify-content: space-around;
+}
+.cardd .details{
+    position: absolute;
+    bottom: -65px;
+    width: 100%;
+    left: 0;
+    background-color: #fff;
+    transition: .5s;
+}
+.cardd .details:hover{
+    /* bottom: 0; */
+    top: 50%;
+}
+.cart{
+    width: 100%;
+    background-color: green;
+    padding: 10px;
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+    transition: .6s;
+}
+.cart:hover{
+    background-color: blue;
+    /* transform: translate(100%); */
+}
+a.cart{
+    color: white;
+}
+a.cart:hover{
+    color: white;
+}
+.menu-item{
+    display: none;
+}
+.login{
+    margin-top: 20px;
+    margin-right: -10px;
+}
+.form{
+    display:flex;
+}
+.f-right{
+    margin-left: 11px;
+    display:block;
+}
+.pro-name{
+    font-weight: bolder;
+    font-size: 31px;
+    margin-top: 21px;
+}
+.pro-price{
+    font-family: Arial;
+    font-weight: bold;
+    color: red;
+    font-size: 25px;
+}
+table tr td{
+    padding: 10px 5px;
+}
+.buy{
+    margin-top: 10px;
+}
+.description{
+    margin-left: 21px;
+}
+.desc{
+    line-height: 1.5;
+    font-size: 21px;
+}
+.cung-loai{
+    width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+.list-group-item a {
+    text-decoration: none;
+    color: #333; /* Màu chữ mặc định */
+    font-weight: 600;
+    flex: 1; /* Giúp chữ chiếm toàn bộ không gian còn lại */
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover đổi màu và hiệu ứng chuyển động */
+.list-group-item:hover a {
+    color: #ff6600; /* Màu cam nổi bật khi hover */
+    transform: translateX(3px);
+}
+
+/* Hiệu ứng khi click vào */
+.list-group-item a:active {
+    color: #ff3300; /* Màu cam đậm hơn khi click */
+}
+/* Đảm bảo carousel full width */
+#productCarousel {
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+/* Đảm bảo ảnh luôn full width và giữ tỷ lệ */
+#productCarousel .carousel-item img {
+    width: 100%;
+    height: auto; /* Giữ tỷ lệ */
+    object-fit: cover; /* Cắt ảnh nếu cần để fit */
+    max-height: 500px; /* Điều chỉnh chiều cao tối đa nếu cần */
+}
+
+/* Căn chỉnh caption để không che ảnh */
+#productCarousel .carousel-caption {
+    background: rgba(0, 0, 0, 0.5); /* Nền mờ để dễ đọc chữ */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+span{
+    color:red;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+.sidebar {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.sidebar h5 {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.search-box {
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+}
+
+.list-group-item {
+    border: none;
+    transition: all 0.3s;
+}
+
+.list-group-item:hover {
+    background-color: #6a5acd;
+    color: #fff;
+    cursor: pointer;
+}
+
+.content-box {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
