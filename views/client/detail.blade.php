@@ -1,5 +1,7 @@
 @extends('client.layouts.main');
+@section('header')
 
+@endsection
 @section('content')
 <section class="row">
         @include('client.layouts.partials.sidebar')

@@ -10824,3 +10824,19 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+
+a.product_link {
+  color: #2c3e50; /* Màu chữ mặc định */
+  font-size: 1.1rem; /* Kích thước chữ */
+  font-weight: 600; /* Độ đậm của chữ */
+  text-decoration: none; /* Bỏ gạch chân mặc định */
+  border-bottom: 2px solid transparent; /* Đường gạch chân ẩn */
+  transition: color 0.3s ease, border-bottom 0.3s ease; /* Hiệu ứng chuyển mượt */
+}
+
+a.product_link:hover,
+a.product_link:focus {
+  color: #e74c3c; /* Màu chữ khi hover/focus */
+  border-bottom: 2px solid #e74c3c; /* Hiệu ứng gạch chân hiện ra khi hover */
+}
+

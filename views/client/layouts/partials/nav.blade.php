@@ -3,7 +3,7 @@
     <div class="container">
         <!-- Logo -->
         <a class="navbar-brand" href="#">
-            <img src="{{file_url('assets/logo.png')}}" alt="Logo" class="logo">
+            <img src="{{ file_url('assets/logo.png') }}" alt="Logo" class="logo">
         </a>
 
         <!-- Toggle Button Mobile -->
@@ -42,19 +42,19 @@
                     </form>
                 </li>
                 @if (!empty($_SESSION['user']))
-                <div class="dropdown">
-                    <button class="nav-link btn btn-primary text-white ms-3 dropdown-toggle" type="button" id="dropdownMenuButton"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Hello, {{ $_SESSION['user']['username'] }}
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-item" href="/admin">Admin</a></li>
-                        <li><a class="dropdown-item" href="/logout">Logout</a></li>
-                    </ul>
-                </div>
-            @else
-                <a class="nav-link btn btn-primary text-white ms-3" href="/auth">Đăng Nhập</a>
-            @endif
+                    <div class="dropdown">
+                        <button class="nav-link btn btn-primary text-white ms-3 dropdown-toggle" type="button"
+                            id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            Hello, {{ $_SESSION['user']['username'] }}
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="/admin">Admin</a></li>
+                            <li><a class="dropdown-item" href="/logout">Logout</a></li>
+                        </ul>
+                    </div>
+                @else
+                    <a class="nav-link btn btn-primary text-white ms-3" href="/auth">Đăng Nhập</a>
+                @endif
                 <!-- Đăng nhập -->
                 <li class="nav-item">
                 </li>

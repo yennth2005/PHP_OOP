@@ -20,7 +20,9 @@
         <!-- Navigation-->
         @include('client.layouts.partials.nav');
         <!-- Header-->
-        @include('client.layouts.partials.header');
+        @section('header')
+            @include('client.layouts.partials.header')
+        @show
         <!-- Section-->
         @yield('content')
         <!-- Footer-->

@@ -12,14 +12,22 @@
                             <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale
                             </div>
                             <!-- Product image-->
-                            <img class="card-img-top" src="{{file_url($product['img_thumbnail'])}}" alt="..." />
+                            <img class="card-img-top" src="{{ file_url($product['img_thumbnail']) }}" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder"><a href="/detail/{{$product['id']}}">{{$product['name']}}</a></h5>
+                                    <h5 class="fw-bolder">
+                                        <a href="/detail/{{ $product['id'] }}"
+                                            style="color: #2c3e50; font-size: 1.1rem; font-weight: 600; text-decoration: none; border-bottom: 2px solid transparent; transition: color 0.3s ease, border-bottom 0.3s ease;"
+                                            onmouseover="this.style.color='#e74c3c'; this.style.borderBottom='2px solid #e74c3c';"
+                                            onmouseout="this.style.color='#2c3e50'; this.style.borderBottom='2px solid transparent';"
+                                            class="product_link">
+                                            {{ $product['name'] }}
+                                        </a>
+                                    </h5>
                                     <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">{{$product['price']}}</span>
+                                    <span class="text-muted text-decoration-line-through">{{ $product['price'] }}</span>
                                     $25.00
                                 </div>
                             </div>
